@@ -3,7 +3,11 @@ import { Avatar } from './Avatar';
 
 import styles from './Comment.module.css';
 
-export function Comment({ content }) {
+export function Comment({ content, onDeleteComment }) {
+	function handleDeleteComment() {
+		onDeleteComment(content);
+	}
+
 	return (
 		<div className={styles.comment}>
 			<Avatar hasBorder={false} src="https://github.com/victorbadaro.png" />
@@ -16,7 +20,7 @@ export function Comment({ content }) {
 							<time title="19 de Dezembro às 18:07" dateTime="2024-12-19 18:07:30">Cerca de 1h atrás</time>
 						</div>
 
-						<button type="button" title="Deletar comentário">
+						<button type="button" onClick={handleDeleteComment} title="Deletar comentário">
 							<Trash size={24} />
 						</button>
 					</header>
