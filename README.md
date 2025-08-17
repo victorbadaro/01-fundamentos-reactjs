@@ -1,8 +1,28 @@
-# React + Vite
+# ReactJS Fundamentals
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple web application developed to practice the fundamental concepts of ReactJS.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [ReactJS](httpss://react.dev/)
+- [Vite](httpss://vitejs.dev/)
+
+## Project Patterns
+
+- **Componentization:** The application is built using reusable components.
+- **CSS Modules:** Styles are written using CSS Modules for local scope.
+
+## Setup and Configuration
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/victorbadaro/fundamentos-reactjs.git
+   ```
+2. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Run the application:**
+   ```bash
+   npm run dev
+   ```
